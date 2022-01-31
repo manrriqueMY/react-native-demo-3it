@@ -10,7 +10,7 @@ import React, { useState } from "react";
 import { GENEROS } from "../../static";
 import SizeBox from "../custom/components/SizeBox";
 import ErrorLabel from "../custom/components/ErrorLabel";
-import useStateCallback from "../custom/hooks/UseStateCallback";
+import useStateCallback from "../custom/hooks/useStateCallback";
 import Failed from "../custom/components/Failed";
 import Success from "../custom/components/Success";
 import { save } from "../services/wsencuesta";

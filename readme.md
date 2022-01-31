@@ -25,3 +25,18 @@ backend-deploy: https://backend-spring-boot-3it.herokuapp.com
 
 username: admin
 password: password
+
+# run
+
+```
+npm run android
+npm run ios
+npm run web
+```
+
+# build
+
+```
+expo build:android
+expo build:ios
+```
