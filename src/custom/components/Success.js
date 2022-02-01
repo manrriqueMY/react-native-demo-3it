@@ -1,7 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import {FONT_SIZE} from '../../../static';
 
-const Success = ({ message = "Encuesta Agregada Correctamente" }) => {
+const Success = ({message = 'Encuesta Agregada Correctamente'}) => {
   return (
     <View>
       <Text style={styles.label}>{message}</Text>
@@ -13,8 +14,8 @@ export default Success;
 
 const styles = StyleSheet.create({
   label: {
-    color: "green",
-    fontWeight: "bold",
-    fontSize: "0.85rem",
+    color: 'green',
+    fontWeight: 'bold',
+    fontSize: 0.85 * FONT_SIZE,
   },
 });

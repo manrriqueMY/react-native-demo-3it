@@ -1,6 +1,7 @@
-import { FlatList, StyleSheet, Text, View } from "react-native";
-import React, { useEffect, useState } from "react";
-import { report } from "../services/wsencuesta";
+import {FlatList, StyleSheet, Text, View} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {report} from '../services/wsencuesta';
+import {FONT_SIZE} from '../../static';
 
 const Resultados = () => {
   const [data, setdata] = useState([]);
@@ -19,7 +20,7 @@ const Resultados = () => {
       <FlatList
         style={styles.list}
         data={data}
-        renderItem={({ item }) => (
+        renderItem={({item}) => (
           <View style={styles.row}>
             <Text>{item.music}</Text>
             <Text>{item.total}</Text>
@@ -35,17 +36,17 @@ export default Resultados;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "white",
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'white',
   },
   row: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    width: "100%",
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
   },
   list: {
-    width: "100%",
-    padding: "1rem",
+    width: '100%',
+    padding: FONT_SIZE,
   },
 });
